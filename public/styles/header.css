@@ -1,0 +1,20 @@
+.header {
+ background-color: coral;
+ background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+ ;
+}
+
+.header-image {
+  padding-top: 120px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
