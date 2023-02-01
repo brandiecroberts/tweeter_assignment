@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  console.log("Hello World");
+  // console.log("Hello World");
 
   $(".new-tweet").keypress(function() {
     const textLength = $(this).find("textarea").val().length;
