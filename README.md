@@ -20,7 +20,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 
 
-<article class="users-tweet">
+<!-- <article class="users-tweet">
       <header class="user-tweet-header">
         <div class="avatar-info">
 <div class="avatar-name">
@@ -36,10 +36,10 @@ This repository is the starter code for the project: Students will fork and clon
       <footer class="user-tweet-footer">
         <p>3 days ago</p>
         <!-- flag -->
-        <div class="symbols">
-  <i class="fa-solid fa-flag"></i>
+        <!-- <div class="symbols"> -->
+  <!-- <i class="fa-solid fa-flag"></i> -->
   <!-- retweet -->
-  <i class="fa-solid fa-retweet"></i>
+  <!-- <i class="fa-solid fa-retweet"></i> -->
   <!-- heart -->
-  <i class="fa-solid fa-heart"></i>
-</div>
+  <!-- <i class="fa-solid fa-heart"></i> -->
+<!-- </div> --> -->
