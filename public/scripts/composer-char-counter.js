@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // console.log("Hello World");
 
-  $(".new-tweet").keypress(function() {
+  $(".new-tweet").on('input',function() {
     const textLength = $(this).find("textarea").val().length;
     $(this)
       .find(".counter")
@@ -9,6 +9,8 @@ $(document).ready(function() {
       
     if (textLength > 140) {
       $(this).find(".counter").css({ color: "red" });
+    } else {
+      $(this).find(".counter").css({ color: "black" });
     }
   });
 });

@@ -28,3 +28,12 @@
   justify-content: space-between;
   margin-top: 15px;
 }
+
+.error-message {
+    margin: 50px;
+    border: 5px solid red;
+    padding: 10px;
+    color: red;
+    font-weight: bold;
+    display: none;
+}
