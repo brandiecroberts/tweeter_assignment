@@ -53,7 +53,7 @@ const createTweetElement = function(obj) {
       </header>
       <div class="line"></div>
       <footer class="user-tweet-footer">
-        <p>${obj.created_at}</p>
+        <p>${timeago.format(obj.created_at)}</p>
         <!-- flag -->
         <div class="symbols">
   <i class="fa-solid fa-flag"></i>
@@ -68,7 +68,37 @@ const createTweetElement = function(obj) {
   return $tweet;
 };
 
+
 $(document).ready(function() {
-  // console.log("ready!");
-  renderTweets(data);
+  
+  //Fetch array of tweets as JSON from /tweets using jQuery
+  const loadTweets = (function() {
+    $.ajax({
+      type: "GET",
+      url: "/tweets/",
+      success: function(tweets) {
+        renderTweets(tweets);
+      }
+    });
+  });
+
+//Add event listener for submit
+  const submit = function(event) {
+    event.preventDefault();
+    console.log($(this).serialize());
+
+    $.ajax({
+      type: "POST",
+      url: "/tweets/",
+      data: $('form').serialize(),
+      success: function(returnData) {
+        loadTweets();
+        console.log("success tweet posted", returnData);
+      },
+    });
+  };
+
+$('form').on('submit', submit);
+  loadTweets();
 });
+
