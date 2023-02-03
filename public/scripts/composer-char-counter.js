@@ -1,5 +1,5 @@
+//Character counter function
 $(document).ready(function() {
-  // console.log("Hello World");
 
   $(".new-tweet").on('input',function() {
     const textLength = $(this).find("textarea").val().length;

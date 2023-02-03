@@ -1,20 +1,44 @@
 .header {
  background-color: coral;
  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
- ;
-}
-
-.header-image {
-  padding-top: 120px;
-  height: 400px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .header-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
+  color: white;
+}
+
+/* Respsonsive design for min width of 1024px */
+@media only screen and (min-width: 1024px) {
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+  } 
+
+  .header {
+    display: flex;
+    height: 25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 15%;
+    width: 45%;
+  }
+
+  .tweet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

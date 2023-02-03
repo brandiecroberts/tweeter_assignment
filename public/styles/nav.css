@@ -2,10 +2,12 @@
   position: fixed;
   height: 120px;
   width: 100vw;
+
   color: #FFFFFF;
   background-color: #4056A1;
   padding: 1.5em;
   font-family: Bungee, sans-serif;
+  
   display: flex;
   justify-content: space-between;
 }
@@ -29,3 +31,24 @@ align-items: center;
 .navbar-heading i {
   color: red;
 }
+
+
+
+/* Responsive design for max 1024px */
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    background-color: transparent;
+  }
+
+  .header {
+    background-color: coral;
+    background-image: url(https://www.transparenttextures.com/patterns/arabesque.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+    padding-top: 5rem;
+
+  }
+}
+

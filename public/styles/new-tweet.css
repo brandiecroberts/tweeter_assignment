@@ -19,7 +19,7 @@
 }
 
 .new-tweet {
-  width: 100%;
+  width: 80%;
   color: #151413;
 }
 
@@ -37,3 +37,8 @@
     font-weight: bold;
     display: none;
 }
+
+
+
+
+

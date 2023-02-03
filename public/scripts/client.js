@@ -4,6 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+//User data
 const data = [
   {
     user: {
@@ -94,13 +95,15 @@ $(document).ready(function() {
 
     //Validation alerts
     const errorMessage = $('.error-message');
-    if ($(this).find("textarea").val().trim.length === 0) {
+
+    if ($(this).find("textarea").val().length === 0) {
       return errorMessage.text("Text box cannot be empty. Please tweet!").slideDown();
     }
-    if ($(this).find("textarea").val().trim.length > 140) {
+    if ($(this).find("textarea").val().length > 140) {
       return errorMessage.text('This tweet exceeds 140 characters').slideDown();
     }
 
+    //Posted tweets
     $.ajax({
       type: "POST",
       url: "/tweets/",
